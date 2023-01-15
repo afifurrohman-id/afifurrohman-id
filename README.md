@@ -1,6 +1,6 @@
-<img src="https://github.com/afifurrohman-id/afifurrohman-id.github.io/blob/main/images/icon.png" alt="icon" width="10%" height="10%">
+<img src="images/icon.png" alt="icon" title='icon afif' width="10%" height="10%">
 <h1>Hello, welcome</h1>
-<img src="images/my-banner.png" alt="banner">
+<img src="images/my-banner.png" alt="banner" title='banner afif'>
 <p>Let's develop new things on the internet</p>
 <br>
 <h2>More info</h2>
