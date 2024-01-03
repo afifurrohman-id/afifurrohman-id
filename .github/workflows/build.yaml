@@ -23,7 +23,7 @@ jobs:
 
     env:
      REGISTRY: ghcr.io
-     IMAGE_NAME: ghcr.io/${{github.repository_owner}}/${{github.event.repository.name}}
+     IMAGE_NAME: ${{github.repository_owner}}/${{github.event.repository.name}}
     steps:
       - uses: actions/checkout@v4
 
