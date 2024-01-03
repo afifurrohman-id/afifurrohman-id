@@ -53,7 +53,7 @@ jobs:
         with:
           registryUrl: ${{env.REGISTRY}}
           registryUsername: ${{github.repository_owner}}
-          registryPassword: ${{secrets.GITHUB_TOKEN}}
+          registryPassword: ${{secrets.REGISTRY_TOKEN}}
           containerAppName: ${{secrets.AZURE_CONTAINER_APP}}
           resourceGroup: ${{secrets.AZURE_RESOURCE_GROUP}}
           imageToDeploy: ${{env.IMAGE_NAME}}:${{github.sha}}
