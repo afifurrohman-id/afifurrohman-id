@@ -26,7 +26,7 @@ jobs:
 
     env:
      REGISTRY: ghcr.io
-     IMAGE_NAME: ghcr.io/${{secrets.AZURE_CONTAINER_APP}}/${{github.event.repository.name}}
+     IMAGE_NAME: ghcr.io/${{github.repository_owner}}/${{secrets.AZURE_CONTAINER_APP}}
     steps:
       - uses: actions/checkout@v4
 
