@@ -23,7 +23,7 @@ jobs:
 
     env:
      REGISTRY: ghcr.io
-     IMAGE_NAME: ${{github.repository_owner}}/${{github.event.repository.name}}
+     IMAGE_NAME: ghcr.io/${{github.repository_owner}}/${{github.event.repository.name}}
     steps:
       - uses: actions/checkout@v4
 
@@ -44,6 +44,7 @@ jobs:
           registryPassword: ${{secrets.GITHUB_TOKEN}}
           containerAppName: ${{secrets.AZURE_CONTAINER_APP}}
           resourceGroup: ${{secrets.AZURE_RESOURCE_GROUP}}
+          imageToDeploy: ${{env.IMAGE_NAME}}:${{github.sha}}
           dockerfilePath: Containerfile
-          imageToBuild: ${{env.REGISTRY}}/${{github.repository_owner}}/${{github.event.repository.name}}:${{github.sha}}
+          imageToBuild: ${{env.IMAGE_NAME}}:${{github.sha}}
           targetPort: ${{secrets.PORT}}
