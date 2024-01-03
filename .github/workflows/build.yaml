@@ -44,7 +44,6 @@ jobs:
           registryPassword: ${{secrets.GITHUB_TOKEN}}
           containerAppName: ${{secrets.AZURE_CONTAINER_APP}}
           resourceGroup: ${{secrets.AZURE_RESOURCE_GROUP}}
-          imageToDeploy: ${{env.IMAGE_NAME}}:${{github.sha}}
           dockerfilePath: Containerfile
-          imageToBuild: ${{env.IMAGE_NAME}}:${{github.sha}}
+          imageToBuild: ${{env.REGISTRY}}/${{github.repository_owner}}/${{github.event.repository.name}}:${{github.sha}}
           targetPort: ${{secrets.PORT}}
