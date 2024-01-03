@@ -33,6 +33,15 @@ jobs:
           username: ${{github.repository_owner}}
           password: ${{secrets.GITHUB_TOKEN}}
 
+      - uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Containerfile
+          push: true
+          tags: |
+            ${{env.IMAGE_NAME}}:${{github.sha}}
+            ${{env.IMAGE_NAME}}
+
       - uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
@@ -45,6 +54,4 @@ jobs:
           containerAppName: ${{secrets.AZURE_CONTAINER_APP}}
           resourceGroup: ${{secrets.AZURE_RESOURCE_GROUP}}
           imageToDeploy: ${{env.IMAGE_NAME}}:${{github.sha}}
-          dockerfilePath: Containerfile
-          imageToBuild: ${{env.IMAGE_NAME}}:${{github.sha}}
           targetPort: ${{secrets.PORT}}
