@@ -1,6 +1,6 @@
 # Hello there!
 
-> *"Let's develop something useful and limitless."*
+> *"Let's develop something useful and correct."*
 
 [![Afif's Github Most Used Language](https://github-readme-stats.vercel.app/api/top-langs/?username=afifurrohman-id)](https://github.com/afifurrohman-id/afifurrohman-id#readme)
 
