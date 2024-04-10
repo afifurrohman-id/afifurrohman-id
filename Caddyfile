@@ -1,0 +1,3 @@
+:{$PORT}
+
+redir {scheme}://{$REDIRECT_DOMAIN}{uri} permanent

@@ -1,4 +1,3 @@
-FROM nginx:alpine
+FROM docker.io/library/caddy:alpine
 
-COPY nginx.conf /etc/nginx/templates/default.conf.template
-
+COPY Caddyfile /etc/caddy/
