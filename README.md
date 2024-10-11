@@ -1,6 +1,6 @@
 # Hello there!
 
-> *"Let's develop something useful, out-of-the-box and correct."*
+> *"Just do it, every process is worth, don't be a loser without do anything"*
 
 [![Afif's Github Most Used Language](https://github-readme-stats.vercel.app/api/top-langs/?username=afifurrohman-id)](https://github.com/afifurrohman-id/afifurrohman-id#readme)
 
